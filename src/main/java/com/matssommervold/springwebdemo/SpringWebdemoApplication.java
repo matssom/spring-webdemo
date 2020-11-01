@@ -19,4 +19,9 @@ public class SpringWebdemoApplication {
 		return String.format("Hello %s!", name);
 	}
 
+	@GetMapping("/")
+	public String home() {
+		return String.format("Hello %s!", "Hi!");
+	}
+
 }
