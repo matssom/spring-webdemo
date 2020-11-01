@@ -2,6 +2,7 @@ package com.matssommervold.springwebdemo.dao;
 
 import com.matssommervold.springwebdemo.model.Todo;
 
+import java.util.List;
 import java.util.UUID;
 
 public interface TodoDao {
@@ -12,5 +13,7 @@ public interface TodoDao {
         UUID id = UUID.randomUUID();
         return insertTodo(id, todo);
     }
+
+    List<Todo> selectAllTodos();
 }
 

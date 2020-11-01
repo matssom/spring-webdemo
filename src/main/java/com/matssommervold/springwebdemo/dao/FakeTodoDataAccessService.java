@@ -18,4 +18,9 @@ public class FakeTodoDataAccessService implements TodoDao {
         return 0;
     }
 
+    @Override
+    public List<Todo> selectAllTodos() {
+        return DB;
+    }
+
 }

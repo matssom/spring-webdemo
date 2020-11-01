@@ -11,7 +11,7 @@ public class Todo {
     private boolean done;
 
 
-    public Todo(@JsonProperty("id") UUID id, @JsonProperty("name") String todo) {
+    public Todo(@JsonProperty("id") UUID id, @JsonProperty("todo") String todo) {
         this.id = id;
         this.todo = todo;
         this.done = false;
